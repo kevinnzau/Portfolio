@@ -1,0 +1,115 @@
+.section-home{
+    background-image: url("/img/greek-vase.png");
+    height: 100vh;
+}
+.header{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+
+    &__logo{
+        height: 3rem;
+    }
+    &__logo-box{
+        transform: translate(7.2rem,1.2rem);
+        }
+}
+    
+.navigation{
+    transform: translate(15rem, 1.7rem);
+    font-size: 2.4rem;
+    &__list{
+        display: flex;
+    }
+    &__link{
+        text-decoration: none;
+        color: $color-secondary-hero;
+    }
+    &__list-item{
+        list-style: none;
+        text-transform: uppercase;   
+        &:not(:last-child) {
+            margin-right:5rem;
+        }
+    }
+}
+.button {
+    background-color: white;
+    border: 3px solid $color-primary-hero;
+    color: $color-primary-hero;
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    font-family: "Laila", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transform: translate(-2rem,1.5rem);
+}
+.hero{
+    &__picture{
+        position: absolute;
+        left: 54.5rem;
+        top: -11.2rem;
+        
+        &__image{
+        width: 95.3rem;
+        height: auto;
+        }
+    }
+}
+.heading{
+    position: absolute;
+    width: 61.7rem;
+    height: 15.7rem;
+    left: 7.2rem;
+    top: 15rem;
+    font-family: "Amidic", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.5rem;
+    line-height: 138.6%;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: $color-secondary-hero;
+}
+.value-preposition{
+    position: absolute;
+    width: 617px;
+    height: 131px;
+    left: 7.2rem;
+    top: 33.7rem;
+    font-family: "Laila",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 110.1%;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: $color-tertiary-hero;
+}
+
+.btn{
+    background-color: $color-primary-hero;
+    border: 3px solid $color-primary-hero;
+    color: white;
+    padding: 1rem 3rem;
+    padding: 2rem 3.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    font-family: "Laila", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: absolute;
+    left: 26.2rem;
+    top: 47rem;
+}
