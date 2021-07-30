@@ -1,0 +1,19 @@
+.section-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color-accent-hero;
+    
+    &__frame{
+        margin: 10rem auto;
+    }
+
+    &__image{
+        width: 30rem;
+    }
+
+    &__text-box{
+        margin: 10rem auto;
+        
+    }
+}

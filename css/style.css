@@ -17,6 +17,18 @@ body {
   font-style: normal;
   font-weight: normal; }
 
+.section-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F3F4F5; }
+  .section-about__frame {
+    margin: 10rem auto; }
+  .section-about__image {
+    width: 30rem; }
+  .section-about__text-box {
+    margin: 10rem auto; }
+
 .section-home {
   background-image: url("/img/greek-vase.png");
   height: 100vh; }
@@ -65,9 +77,9 @@ body {
 .hero__picture {
   position: absolute;
   left: 54.5rem;
-  top: -11.2rem; }
+  top: -10.4rem; }
   .hero__picture__image {
-    width: 95.3rem;
+    width: 93.2rem;
     height: auto; }
 
 .heading {
@@ -94,7 +106,7 @@ body {
   font-family: "Laila",sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 33px;
+  font-size: 3rem;
   line-height: 110.1%;
   letter-spacing: 0.01em;
   text-transform: capitalize;
