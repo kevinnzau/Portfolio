@@ -59,7 +59,7 @@ body {
       margin-right: 5rem; }
 
 .button {
-  background-color: white;
+  background-color: transparent;
   border: 3px solid #071B50;
   color: #071B50;
   padding: 1rem 3rem;
