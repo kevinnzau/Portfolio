@@ -1,0 +1,20 @@
+.section{
+    grid-column: 1/-1;
+     &-process{
+        background-color: blueviolet;
+        grid-row: 3/4;
+    }
+    &-pricing{
+        background-color: chartreuse;
+        grid-row: 4/5;
+    }
+    &-contacts{
+        background-color: chocolate;
+        grid-row: 5/6;
+    }
+    &-footer{
+        background-color: cornflowerblue;
+        grid-row: 6/7;
+    }
+    
+}

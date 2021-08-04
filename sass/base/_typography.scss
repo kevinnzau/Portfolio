@@ -1,5 +1,28 @@
 body{
     font-family: 'Laila', sans-serif;
     font-style: normal;
+    // font-weight: normal;
+}
+.heading{
+    position: absolute;
+    width: 61.7rem;
+    height: 15.7rem;
+    left: 7.2rem;
+    top: 15rem;
+    font-family: "Amidic", sans-serif;
+    font-style: normal;
     font-weight: normal;
+    font-size: 5.5rem;
+    line-height: 138.6%;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: $color-secondary-hero;
+}
+.heading-secondary{
+    font-family: Laila;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.3rem;
+    line-height: 9.1rem;
+    color: $color-tertiary-hero;
 }

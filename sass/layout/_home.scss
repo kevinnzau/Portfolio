@@ -1,6 +1,7 @@
 .section-home{
     background-image: url("/img/greek-vase.png");
-    height: 100vh;
+    grid-column: 1/-1;
+
 }
 .header{ 
     display: flex;
@@ -63,21 +64,7 @@
         }
     }
 }
-.heading{
-    position: absolute;
-    width: 61.7rem;
-    height: 15.7rem;
-    left: 7.2rem;
-    top: 15rem;
-    font-family: "Amidic", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 5.5rem;
-    line-height: 138.6%;
-    letter-spacing: 0.01em;
-    text-transform: capitalize;
-    color: $color-secondary-hero;
-}
+
 .value-preposition{
     position: absolute;
     width: 617px;
