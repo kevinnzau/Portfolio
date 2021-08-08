@@ -1,2 +1,4 @@
-node_modules
+#Ignore this directory
+#To install dependencies on device run npm install
 
+node_modules
