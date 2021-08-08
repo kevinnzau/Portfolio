@@ -1,2 +1,3 @@
+#Ignore these files
+#Run npm install to get modules from dependencies
 node_modules
-
