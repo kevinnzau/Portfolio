@@ -1,2 +1,7 @@
-node_modules
+<<<<<<< HEAD
+=======
+#Ignore this directory
+#To install dependencies on device run npm install
 
+>>>>>>> feature
+node_modules
