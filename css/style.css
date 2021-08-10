@@ -163,9 +163,6 @@ p:not(:last-child) {
 
 .section {
   grid-column: 1/-1; }
-  .section-process {
-    background-color: blueviolet;
-    grid-row: 3/4; }
   .section-pricing {
     background-color: chartreuse;
     grid-row: 4/5; }
