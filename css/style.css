@@ -7,6 +7,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-size: 62.5%; }
 
 html, body {
@@ -36,14 +37,28 @@ body {
   letter-spacing: 0.01em;
   text-transform: capitalize;
   color: #070B14; }
-
-.heading-secondary {
-  font-family: Laila;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3.3rem;
-  line-height: 9.1rem;
-  color: #8A2D2D; }
+  .heading-secondary {
+    font-family: "Laila", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.3rem;
+    line-height: 9.1rem;
+    color: #8A2D2D; }
+  .heading-tertiary {
+    font-family: "Kaithryn Personal Use", "laila", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.5rem;
+    line-height: 15.6rem;
+    color: #000000;
+    text-transform: capitalize; }
+  .heading-4 {
+    font-family: Laila;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 56px;
+    color: #52006A; }
 
 .section-picture {
   margin: 15rem 10rem;
@@ -160,6 +175,17 @@ p:not(:last-child) {
   position: absolute;
   left: 26.2rem;
   top: 47rem; }
+
+.section-process {
+  background-color: #F3F4F5; }
+
+.process_text {
+  font-family: Laila;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 33px;
+  color: #0A1931; }
 
 .section {
   grid-column: 1/-1; }
