@@ -17,12 +17,34 @@ body{
     letter-spacing: 0.01em;
     text-transform: capitalize;
     color: $color-secondary-hero;
-}
-.heading-secondary{
-    font-family: Laila;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3.3rem;
-    line-height: 9.1rem;
-    color: $color-tertiary-hero;
+
+    &-secondary{
+        font-family: "Laila", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.3rem;
+        line-height: 9.1rem;
+        color: $color-tertiary-hero;
+    }
+    &-tertiary{
+        font-family: "Kaithryn Personal Use", "laila", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4.5rem;
+        line-height: 15.6rem;
+        color: #000000;
+        text-transform: capitalize;
+        display:flex;
+        justify-content: center;
+        margin: 3rem 0rem;
+    }
+    &-4{
+        margin-bottom: 1rem;
+        font-family: "Laila", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 56px;
+        color: $color-primary-process;
+    }
 }

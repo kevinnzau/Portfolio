@@ -7,6 +7,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-size: 62.5%; }
 
 html, body {
@@ -16,7 +17,7 @@ html, body {
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100vh repeat(5, 1fr); }
+  grid-template-rows: 100vh 76rem 1fr; }
 
 body {
   font-family: 'Laila', sans-serif;
@@ -36,14 +37,32 @@ body {
   letter-spacing: 0.01em;
   text-transform: capitalize;
   color: #070B14; }
-
-.heading-secondary {
-  font-family: Laila;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3.3rem;
-  line-height: 9.1rem;
-  color: #8A2D2D; }
+  .heading-secondary {
+    font-family: "Laila", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.3rem;
+    line-height: 9.1rem;
+    color: #8A2D2D; }
+  .heading-tertiary {
+    font-family: "Kaithryn Personal Use", "laila", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.5rem;
+    line-height: 15.6rem;
+    color: #000000;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0rem; }
+  .heading-4 {
+    margin-bottom: 1rem;
+    font-family: "Laila", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 56px;
+    color: #52006A; }
 
 .section-picture {
   margin: 15rem 10rem;
@@ -60,7 +79,6 @@ body {
   grid-column: 7/12;
   grid-row: 2/3;
   margin: 10rem 0;
-  margin-left: 0px;
   margin-left: 0.7rem;
   padding: 0 3rem; }
   .section-description__text-box {
@@ -161,17 +179,25 @@ p:not(:last-child) {
   left: 26.2rem;
   top: 47rem; }
 
-.section {
-  grid-column: 1/-1; }
-  .section-process {
-    background-color: blueviolet;
-    grid-row: 3/4; }
-  .section-pricing {
-    background-color: chartreuse;
-    grid-row: 4/5; }
-  .section-contacts {
-    background-color: chocolate;
-    grid-row: 5/6; }
-  .section-footer {
-    background-color: cornflowerblue;
-    grid-row: 6/7; }
+.section-process {
+  background-color: #F3F4F5;
+  grid-column: 1/-1;
+  padding: 0 10rem; }
+
+.processes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem; }
+
+.process {
+  display: grid;
+  grid-template-columns: 10rem 1fr; }
+  .process_icon {
+    margin-right: 5rem; }
+  .process_text {
+    font-family: "Laila", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    color: #0A1931; }
