@@ -187,7 +187,6 @@ p:not(:last-child) {
 .processes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   grid-gap: 3rem; }
 
 .process {
@@ -196,7 +195,7 @@ p:not(:last-child) {
   .process_icon {
     margin-right: 5rem; }
   .process_text {
-    font-family: Laila;
+    font-family: "Laila", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 2.1rem;
