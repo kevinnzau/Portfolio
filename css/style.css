@@ -53,9 +53,11 @@ body {
     color: #000000;
     text-transform: capitalize;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin: 3rem 0rem; }
   .heading-4 {
-    font-family: Laila;
+    margin-bottom: 1rem;
+    font-family: "Laila", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -178,15 +180,25 @@ p:not(:last-child) {
   top: 47rem; }
 
 .section-process {
-  background-color: lightblue; }
+  background-color: #F3F4F5;
+  grid-column: 1/-1;
+  padding: 0 10rem; }
 
-.process_text {
-  font-family: Laila;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2.1rem;
-  line-height: 3.3rem;
-  color: #0A1931; }
+.processes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 3rem; }
 
-.section {
-  grid-column: 1/-1; }
+.process {
+  display: grid;
+  grid-template-columns: 10rem 1fr; }
+  .process_icon {
+    margin-right: 5rem; }
+  .process_text {
+    font-family: Laila;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    color: #0A1931; }

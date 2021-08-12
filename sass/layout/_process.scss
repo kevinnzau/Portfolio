@@ -1,12 +1,29 @@
-.section-process{
-    // background-color: $color-accent-hero;
-    background-color: lightblue;
+.section{
+    &-process{
+    background-color: $color-accent-hero;
+    grid-column: 1/-1;
+    padding: 0 10rem;
+  }
 }
-.process_text{
-    font-family: Laila;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.1rem;
-    line-height: 3.3rem;
-    color: $color-secondary-process;
+.processes{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-gap: 3rem;
+}
+.process{
+    display: grid;
+    grid-template-columns:10rem 1fr;
+
+    &_icon{
+      margin-right: 5rem;
+    }
+    &_text{
+      font-family: Laila;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.1rem;
+      line-height: 3.3rem;
+      color: $color-secondary-process;
+  }
 }
