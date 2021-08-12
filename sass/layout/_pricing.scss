@@ -1,0 +1,30 @@
+.section-pricing{
+  grid-column: 1/-1;
+  background-color: $color-primary-process;
+  padding: 0 5rem;
+}
+.price{
+  &_cards{
+  display:flex;
+
+  }
+  &_card{
+    margin: 1rem 1rem;
+    border: 2px solid #E5E5E5;
+    padding: 3.3rem 1rem;
+    width: 25%;
+  }
+  &_text{
+    font-family:  "Laila", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.3rem;
+    line-height: 34px;
+    text-align: center;
+    color: $color-primary-pricing;
+  }
+}
+span {
+    display: block;
+    text-align: center;
+  }

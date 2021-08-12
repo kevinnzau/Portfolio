@@ -17,7 +17,7 @@ html, body {
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100vh 76rem 1fr; }
+  grid-template-rows: 100vh 76rem 1fr 80rem; }
 
 body {
   font-family: 'Laila', sans-serif;
@@ -50,11 +50,22 @@ body {
     font-weight: normal;
     font-size: 4.5rem;
     line-height: 15.6rem;
-    color: #000000;
+    color: #070B14;
     text-transform: capitalize;
     display: flex;
     justify-content: center;
     margin: 3rem 0rem; }
+  .heading-tertiary_1 {
+    font-family: "Kaithryn Personal Use", "laila", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 15.6rem;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem; }
   .heading-4 {
     margin-bottom: 1rem;
     font-family: "Laila", sans-serif;
@@ -63,6 +74,18 @@ body {
     font-size: 36px;
     line-height: 56px;
     color: #52006A; }
+  .heading-5 {
+    font-family: "Laila", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.1rem;
+    line-height: 4.3rem;
+    margin-bottom: 2.5rem;
+    color: #FF7600; }
+    .heading-5--bold {
+      font-weight: bold;
+      font-size: 5rem;
+      line-height: 7.7rem; }
 
 .section-picture {
   margin: 15rem 10rem;
@@ -179,10 +202,38 @@ p:not(:last-child) {
   left: 26.2rem;
   top: 47rem; }
 
+.section-pricing {
+  grid-column: 1/-1;
+  background-color: #52006A;
+  padding: 0 5rem; }
+
+.price_cards {
+  display: flex; }
+
+.price_card {
+  margin: 1rem 1rem;
+  border: 2px solid #E5E5E5;
+  padding: 3.3rem 1rem;
+  width: 25%; }
+
+.price_text {
+  font-family: "Laila", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.3rem;
+  line-height: 34px;
+  text-align: center;
+  color: #FF7600; }
+
+span {
+  display: block;
+  text-align: center; }
+
 .section-process {
   background-color: #F3F4F5;
   grid-column: 1/-1;
-  padding: 0 10rem; }
+  padding: 0 10rem;
+  padding-bottom: 5rem; }
 
 .processes {
   display: grid;
