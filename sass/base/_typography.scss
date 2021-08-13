@@ -7,9 +7,8 @@ body{
     width: 61.7rem;
     height: 15.7rem;
     left: 7.2rem;
-    top: 15rem;
-    font-family: "Amidic", sans-serif;
-    font-style: normal;
+    top: 17rem;
+    font-family: "Amidic", "laila", sans-serif;
     font-weight: normal;
     font-size: 5.5rem;
     line-height: 138.6%;
@@ -19,65 +18,50 @@ body{
 
     &-secondary{
         font-family: "Laila", sans-serif;
-        font-style: normal;
         font-weight: 500;
         font-size: 3.3rem;
         line-height: 9.1rem;
         color: $color-tertiary-hero;
     }
     &-tertiary{
-        font-family: "Kaithryn Personal Use", "laila", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 4.5rem;
-        line-height: 15.6rem;
+      font-family: "Kaithryn Personal Use", "laila", sans-serif;
+      font-weight: normal;
+      font-size: 3.5rem;
+      line-height: 15.6rem;
+      text-transform: capitalize;
+      display:flex;
+      justify-content: center;
+    }
+
+    &-tertiary_1{
         color: $color-secondary-hero;
-        text-transform: capitalize;
-        display:flex;
-        justify-content: center;
         margin: 3rem 0rem;
     }
-    &-tertiary_1{
-        font-family: "Kaithryn Personal Use", "laila", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 3.5rem;
-        line-height: 15.6rem;
+    &-tertiary_2{
         color: $color-secondary-pricing;
-        text-transform: capitalize;
-        display:flex;
-        justify-content: center;
         margin: 1rem 0rem;
     }
-    &-tertiary_2{
-        font-family: "Kaithryn Personal Use", "laila", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 3.5rem;
-        line-height: 15.6rem;
+    &-tertiary_3{
         color: $color-secondary-contacts;
-        text-transform: capitalize;
-        display:flex;
-        justify-content: center;
         margin: 1rem 0rem;
     }
     &-4{
         margin-bottom: 1rem;
         font-family: "Laila", sans-serif;
-        font-style: normal;
         font-weight: 500;
-        font-size: 36px;
-        line-height: 56px;
+        font-size: 3.2rem;
+        line-height: 5.6rem;
         color: $color-primary-process;
     }
     &-5{
       font-family: "Laila", sans-serif;
-      font-style: normal;
       font-weight: 600;
       font-size: 2.1rem;
       line-height: 4.3rem;
       margin-bottom: 2.5rem;
       color: $color-primary-pricing;
+      display: block;
+      text-align: center;
       &--bold{
         font-weight: bold;
         font-size: 5rem;
