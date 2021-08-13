@@ -1,0 +1,59 @@
+.section-contacts{
+  grid-column: 1/-1;
+  background-color: $color-primary-contacts;
+  padding:0rem 11.1rem;
+}
+.contacts{
+  &_details {
+    display: grid;
+    grid-template-columns: 7.1rem 1fr;
+    margin-top: 2.5rem;
+  }
+  &_detail{
+    font-family: "Laila", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.65rem;
+    line-height: 3.6rem;
+    color: $color-accent-contacts;
+
+    &_icon{
+    margin-left: 2rem;
+    margin-bottom: 1.3rem;
+  }
+  }
+  &_text{
+    font-family: "Laila", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: $color-accent-contacts;
+    padding: 3rem 0rem 2rem 2rem;
+  }
+  &_box{
+  display: flex;
+  justify-content: center;
+  }
+  &_image{
+    width: 40%;
+    height: auto;
+  }
+  &_socials{
+    display: flex;
+    justify-content: center;
+
+    &_icon{
+      margin-top: 5rem;
+
+    &:not(:last-child) {
+       margin-right: 2rem;
+     }
+     }
+  }
+  &_container{
+    background-color: $color-tertiary-contacts;
+    width: 45%;
+  }
+
+}
