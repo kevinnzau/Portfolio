@@ -1,0 +1,16 @@
+.section-footer{
+  grid-column: 1/-1;
+  background-color: $color-primary-footer;
+  padding-top: 4rem;
+}
+.footer_text{
+  font-family: "Laila", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 25px;
+  letter-spacing: 0.32em;
+  color: $color-primary-contacts;
+  text-align: center;
+  text-transform: uppercase;
+}

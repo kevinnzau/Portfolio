@@ -49,6 +49,18 @@ body{
         justify-content: center;
         margin: 1rem 0rem;
     }
+    &-tertiary_2{
+        font-family: "Kaithryn Personal Use", "laila", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.5rem;
+        line-height: 15.6rem;
+        color: $color-secondary-contacts;
+        text-transform: capitalize;
+        display:flex;
+        justify-content: center;
+        margin: 1rem 0rem;
+    }
     &-4{
         margin-bottom: 1rem;
         font-family: "Laila", sans-serif;
