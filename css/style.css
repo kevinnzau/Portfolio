@@ -126,7 +126,10 @@ p:not(:last-child) {
 
 .section-home {
   background-image: url("/img/greek-vase.png");
-  grid-column: 1/-1; }
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 13vh 87vh; }
 
 .header {
   display: flex;
@@ -155,13 +158,14 @@ p:not(:last-child) {
     .navigation__list-item:not(:last-child) {
       margin-right: 5rem; }
 
-.hero__picture {
-  position: absolute;
-  left: 54.5rem;
-  top: -6.45rem; }
-  .hero__picture__image {
-    width: 93.2rem;
-    height: auto; }
+.hero {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: repeat(1, 1fr); }
+  .hero__picture {
+    grid-row-end: -1;
+    grid-column-end: -1;
+    overflow: hidden; }
 
 .value-preposition {
   position: absolute;

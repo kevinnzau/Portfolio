@@ -1,7 +1,9 @@
 .section-home{
     background-image: url("/img/greek-vase.png");
     grid-column: 1/-1;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 13vh 87vh;
 }
 .header{
     display: flex;
@@ -40,15 +42,22 @@
 }
 
 .hero{
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: repeat(1,1fr);
     &__picture{
-        position: absolute;
-        left: 54.5rem;
-        top: -6.45rem;
-
-        &__image{
-        width: 93.2rem;
-        height: auto;
-        }
+        // position: absolute;
+        // left: 54.5rem;
+        // top: -6.45rem;
+        grid-row-end: -1;
+        grid-column-end: -1;
+        overflow: hidden;
+        // &__image{
+        //   // position: relative;
+        //   // left: 54.5rem;
+        // // width: 93.2rem;
+        // // height: auto;
+        // }
     }
 }
 
