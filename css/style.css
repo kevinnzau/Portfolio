@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -9,6 +26,18 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 41.25%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 html, body {
   max-width: 100%;
@@ -118,7 +147,7 @@ p:not(:last-child) {
   font-style: normal;
   font-weight: 500;
   font-size: 1.3rem;
-  line-height: 25px;
+  line-height: 2.5rem;
   letter-spacing: 0.32em;
   color: #FFF9B0;
   text-align: center;
@@ -129,22 +158,19 @@ p:not(:last-child) {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 13vh 87vh; }
+  grid-template-rows: 16vh 84vh; }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 15px; }
+  align-items: center; }
   .header__logo {
     height: 3rem; }
   .header__logo-box {
-    margin-top: 1.2rem;
     margin-left: 7.2rem; }
 
 .navigation {
-  margin-top: 1.7rem;
   margin-left: 15rem;
   font-size: 2.4rem; }
   .navigation__list {
@@ -169,8 +195,8 @@ p:not(:last-child) {
 
 .value-preposition {
   position: absolute;
-  width: 617px;
-  height: 131px;
+  width: 61.7rem;
+  height: 13.1rem;
   left: 7.2rem;
   top: 35.7rem;
   font-family: "Laila",sans-serif;
@@ -183,23 +209,22 @@ p:not(:last-child) {
   color: #8A2D2D; }
 
 .home_button {
-  border: 3px solid #071B50;
+  border: 0.3rem solid #071B50;
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  border-radius: 20px;
+  font-size: 1.6rem;
+  border-radius: 2rem;
   font-family: "Laila", sans-serif; }
   .home_button_1 {
     background-color: transparent;
     color: #071B50;
     padding: 1rem 3rem;
-    border-radius: 20px;
+    border-radius: 2rem;
     font-family: "Laila", sans-serif;
     font-size: 2rem;
-    margin-top: 1.4rem;
     margin-right: 1.5rem; }
   .home_button_2 {
     background-color: #071B50;
@@ -230,7 +255,7 @@ p:not(:last-child) {
   font-style: normal;
   font-weight: normal;
   font-size: 2.3rem;
-  line-height: 34px;
+  line-height: 3.4rem;
   text-align: center;
   color: #FF7600; }
 
@@ -320,7 +345,7 @@ p:not(:last-child) {
   font-style: normal;
   font-weight: 500;
   font-size: 1.3rem;
-  line-height: 25px;
+  line-height: 2.5rem;
   letter-spacing: 0.32em;
   color: #FFF9B0;
   text-align: center;
