@@ -1,0 +1,502 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 41.25%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 100vh 76rem 1fr 85rem 71rem 10rem;
+      grid-template-rows: 100vh 76rem 1fr 85rem 71rem 10rem;
+}
+
+body {
+  font-family: 'Laila', sans-serif;
+  font-style: normal;
+}
+
+.heading {
+  position: absolute;
+  width: 61.7rem;
+  height: 15.7rem;
+  left: 7.2rem;
+  top: 13.7rem;
+  font-family: "lato", sans-serif;
+  font-weight: normal;
+  font-size: 5.9rem;
+  line-height: 155.6%;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #070B14;
+}
+
+.heading-secondary {
+  font-family: "Laila", sans-serif;
+  font-weight: 500;
+  font-size: 3.3rem;
+  line-height: 9.1rem;
+  color: #8A2D2D;
+}
+
+.heading-tertiary {
+  font-family: "laila", sans-serif;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 15.6rem;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heading-tertiary_1 {
+  color: #070B14;
+  margin: 3rem 0rem;
+}
+
+.heading-tertiary_2 {
+  color: #E5E5E5;
+  margin: 1rem 0rem;
+}
+
+.heading-tertiary_3 {
+  color: #FC5404;
+  margin: 1rem 0rem;
+}
+
+.heading-4 {
+  margin-bottom: 1rem;
+  font-family: "Laila", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 5.6rem;
+  color: #52006A;
+}
+
+.heading-5 {
+  font-family: "Laila", sans-serif;
+  font-weight: 600;
+  font-size: 2.1rem;
+  line-height: 4.3rem;
+  margin-bottom: 2.5rem;
+  color: #FF7600;
+  display: block;
+  text-align: center;
+}
+
+.heading-5--bold {
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 7.7rem;
+}
+
+.section-picture {
+  margin: 15rem 10rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-picture__image {
+  width: auto;
+  height: 40rem;
+}
+
+.section-description {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 5;
+  grid-column: 7/12;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 10rem 0;
+  margin-left: 0.7rem;
+  padding: 0 3rem;
+}
+
+.section-description__text-box {
+  font-family: Laila;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.0rem;
+  line-height: 3rem;
+  color: #071B50;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.section-footer {
+  grid-column: 1/-1;
+  background-color: #314E52;
+  padding-top: 4rem;
+}
+
+.footer_text {
+  font-family: "Laila", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.32em;
+  color: #FFF9B0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-home {
+  background-image: url("/img/greek-vase.png");
+  grid-column: 1/-1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 16vh 84vh;
+      grid-template-rows: 16vh 84vh;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  height: 3rem;
+}
+
+.header__logo-box {
+  margin-left: 7.2rem;
+}
+
+.navigation {
+  margin-left: 15rem;
+  font-size: 2.4rem;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #070B14;
+}
+
+.navigation__list-item {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.navigation__list-item:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 1fr;
+      grid-template-columns: 40% 1fr;
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+}
+
+.hero__picture {
+  grid-row-end: -1;
+  grid-column-end: -1;
+  overflow: hidden;
+}
+
+.value-preposition {
+  position: absolute;
+  width: 61.7rem;
+  height: 13.1rem;
+  left: 7.2rem;
+  top: 35.7rem;
+  font-family: "Lato",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 110.1%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #8A2D2D;
+}
+
+.home_button {
+  border: 0.3rem solid #071B50;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  border-radius: 2rem;
+  font-family: "Laila", sans-serif;
+}
+
+.home_button_1 {
+  background-color: transparent;
+  color: #071B50;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-family: "Laila", sans-serif;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+.home_button_2 {
+  background-color: #071B50;
+  color: white;
+  padding: 2rem 3.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: absolute;
+  left: 26.2rem;
+  top: 49rem;
+}
+
+.section-pricing {
+  grid-column: 1/-1;
+  background-color: #52006A;
+  padding: 0 5rem;
+}
+
+.price_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price_card {
+  margin: 1rem 1rem;
+  border: 2px solid #E5E5E5;
+  padding: 3.3rem 1rem;
+  width: 25%;
+}
+
+.price_text {
+  font-family: "Laila", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.3rem;
+  line-height: 3.4rem;
+  text-align: center;
+  color: #FF7600;
+}
+
+.section-process {
+  background-color: #F3F4F5;
+  grid-column: 1/-1;
+  padding: 0 10rem;
+  padding-bottom: 5rem;
+}
+
+.processes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.process {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10rem 1fr;
+      grid-template-columns: 10rem 1fr;
+}
+
+.process_icon {
+  margin-right: 5rem;
+  width: auto;
+  height: 5rem;
+}
+
+.process_text {
+  font-family: "Laila", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.1rem;
+  line-height: 3.3rem;
+  color: #0A1931;
+}
+
+.section-contacts {
+  grid-column: 1/-1;
+  background-color: #FFF9B0;
+  padding: 0rem 11.1rem;
+}
+
+.contacts_details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7.1rem 1fr;
+      grid-template-columns: 7.1rem 1fr;
+  margin-top: 2.5rem;
+}
+
+.contacts_detail {
+  font-family: "Laila", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.65rem;
+  line-height: 3.6rem;
+  color: #1E212D;
+}
+
+.contacts_detail_icon {
+  margin-left: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.contacts_text {
+  font-family: "Laila", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: #1E212D;
+  padding: 3rem 0rem 2rem 2rem;
+}
+
+.contacts_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts_image {
+  width: 40%;
+  height: auto;
+}
+
+.contacts_socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts_socials_icon {
+  margin-top: 5rem;
+}
+
+.contacts_socials_icon:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.contacts_container {
+  background-color: #FFC38B;
+  width: 45%;
+}
+
+.section-footer {
+  grid-column: 1/-1;
+  background-color: #314E52;
+  padding-top: 4rem;
+}
+
+.footer_text {
+  font-family: "Laila", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.32em;
+  color: #FFF9B0;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=main.css.map */

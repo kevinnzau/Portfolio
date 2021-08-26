@@ -49,7 +49,7 @@ html, body {
   grid-template-rows: 100vh 76rem 1fr 85rem 71rem 10rem; }
 
 body {
-  font-family: 'Laila', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal; }
 
 .heading {
@@ -57,11 +57,11 @@ body {
   width: 61.7rem;
   height: 15.7rem;
   left: 7.2rem;
-  top: 17rem;
-  font-family: "Amidic", "laila", sans-serif;
+  top: 13.7rem;
+  font-family: "lato", sans-serif;
   font-weight: normal;
-  font-size: 5.5rem;
-  line-height: 138.6%;
+  font-size: 5.9rem;
+  line-height: 155.6%;
   letter-spacing: 0.01em;
   text-transform: capitalize;
   color: #070B14; }
@@ -72,9 +72,9 @@ body {
     line-height: 9.1rem;
     color: #8A2D2D; }
   .heading-tertiary {
-    font-family: "Kaithryn Personal Use", "laila", sans-serif;
+    font-family: "Laila", sans-serif;
     font-weight: normal;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     line-height: 15.6rem;
     text-transform: capitalize;
     display: flex;
@@ -171,6 +171,7 @@ p:not(:last-child) {
     margin-left: 7.2rem; }
 
 .navigation {
+  font-family: "lato", sans-serif;
   margin-left: 15rem;
   font-size: 2.4rem; }
   .navigation__list {
@@ -199,12 +200,12 @@ p:not(:last-child) {
   height: 13.1rem;
   left: 7.2rem;
   top: 35.7rem;
-  font-family: "Laila",sans-serif;
+  font-family: "Lato",sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 3rem;
   line-height: 110.1%;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   text-transform: capitalize;
   color: #8A2D2D; }
 
