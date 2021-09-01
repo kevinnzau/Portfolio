@@ -52,10 +52,16 @@
         overflow: hidden;
     }
 
-    &__picture{
-        
+    &__picture__image {
+        width: 100%;
+        height: auto;
+
+        @include respond(tab-port) { 
+            left: 9%;
+            position: relative;
+        }
+    }        
     }
-}
 
 .value-preposition{
     position: absolute;

@@ -39,4 +39,9 @@ html, body {
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: 100vh 76rem 1fr 85rem 71rem 10rem;
+
+    @include respond(tab-port) { 
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: 92vh 76rem 1fr 92rem 64rem 10rem;
+    }
 }

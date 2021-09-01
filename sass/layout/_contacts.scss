@@ -8,6 +8,10 @@
     display: grid;
     grid-template-columns: 7.1rem 1fr;
     margin-top: 2.5rem;
+
+    @include respond(tab-port) { 
+      margin-top: -0.5rem;
+    }
   }
   &_detail{
     font-family: "Laila", sans-serif;
@@ -17,9 +21,19 @@
     line-height: 3.6rem;
     color: $color-accent-contacts;
 
+    @include respond(tab-port) { 
+      font-size: 2.4rem;
+    }
+    
+
     &_icon{
     margin-left: 2rem;
     margin-bottom: 1.3rem;
+
+    @include respond(tab-port) { 
+      width: 3.2rem;
+      height: auto;
+    }  
   }
   }
   &_text{
@@ -30,6 +44,10 @@
     line-height: 3.5rem;
     color: $color-accent-contacts;
     padding: 3rem 0rem 2rem 2rem;
+
+    @include respond(tab-port) {
+      font-size: 2.4rem;
+    }
   }
   &_box{
   display: flex;
@@ -46,6 +64,9 @@
     &_icon{
       margin-top: 5rem;
 
+      @include respond(tab-port) {
+      width: 4.5rem;
+      }
     &:not(:last-child) {
        margin-right: 2rem;
      }
