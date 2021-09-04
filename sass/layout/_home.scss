@@ -23,8 +23,13 @@
     font-family:"lato", sans-serif;
     margin-left: 15rem;
     font-size: 2.4rem;
+
     &__list{
         display: flex;
+
+        @include respond(phone) { 
+        display: none;
+         }
     }
     &__link{
         text-decoration: none;
@@ -46,6 +51,10 @@
   display: grid;
   grid-template-columns: 40% 1fr;
   grid-template-rows: repeat(1,1fr);
+
+  @include respond(phone){
+      display: block;
+  }
     &__picture{
         grid-row-end: -1;
         grid-column-end: -1;
@@ -56,8 +65,11 @@
         width: 100%;
         height: auto;
 
+        // @include respond(phone) { 
+        // display: none;
+        //  }
+
         @include respond(tab-port) { 
-            left: 9%;
             position: relative;
         }
     }        
@@ -77,6 +89,14 @@
     letter-spacing: 0.03em;
     text-transform: capitalize;
     color: $color-tertiary-hero;
+
+    @include respond(phone) { 
+        position:relative;
+        left: 50%;
+        text-align: center;
+        top: 7%;
+        transform: translate(-50%, 0);
+      }
 }
 .home_button{
         border: .3rem solid $color-primary-hero;
@@ -97,6 +117,10 @@
         font-family: "Laila", sans-serif;
         font-size: 2rem;
         margin-right: 1.5rem;
+
+        @include respond(phone) { 
+            display: none;
+             }
         }
         &_2{
           background-color: $color-primary-hero;
@@ -107,5 +131,13 @@
           position: absolute;
           left: 26.2rem;
           top: 49rem;
+          }
+
+          @include respond(phone) { 
+            position:relative;
+            left: 50%;
+            text-align: center;
+            top: -50%;
+            transform: translate(-50%, 50%);
           }
     }

@@ -42,6 +42,13 @@ html, body {
 
     @include respond(tab-port) { 
         grid-template-columns: repeat(12,1fr);
-        grid-template-rows: 92vh 76rem 1fr 92rem 64rem 10rem;
+        grid-template-rows: 92vh 76rem 1fr 92rem 64rem 9rem;
+    }
+
+    @include respond(phone){
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: 116rem 57rem 1fr 123rem 64rem 9rem;
     }
 }
+
+// @include respond(phone) {  }

@@ -1,9 +1,13 @@
 .section{
     &-process{
-    background-color: $color-accent-hero;
-    grid-column: 1/-1;
-    padding: 0 10rem;
-    padding-bottom: 5rem;
+        background-color: $color-accent-hero;
+        grid-column: 1/-1;
+        padding: 0 10rem;
+        padding-bottom: 5rem;
+
+      @include respond(phone){
+        padding: 0 7.5rem 8rem 7.5rem;
+      }
   }
 }
 .processes{
@@ -12,6 +16,9 @@
   grid-gap: 3rem;
   justify-content: center;
 
+  @include respond(phone){
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 .process{
     display: grid;

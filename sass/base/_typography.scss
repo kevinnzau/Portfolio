@@ -16,12 +16,25 @@ body{
     text-transform: capitalize;
     color: $color-secondary-hero;
 
+     @include respond(phone) { 
+        position:relative;
+        left: 50%;
+        text-align: center;
+        top: 0%;
+        transform: translate(-50%, 0);
+      }
+
     &-secondary{
         font-family: "Laila", sans-serif;
         font-weight: 500;
         font-size: 3.3rem;
         line-height: 9.1rem;
         color: $color-tertiary-hero;
+
+        @include respond(phone){
+          font-size: 5.9rem;
+          line-height: 12.1rem;
+        }
     }
     &-tertiary{
       font-family: "Laila", sans-serif;

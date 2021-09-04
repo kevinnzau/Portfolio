@@ -56,6 +56,10 @@
   &_image{
     width: 40%;
     height: auto;
+
+    @include respond(phone){
+      display:none;
+    }
   }
   &_socials{
     display: flex;
@@ -75,6 +79,11 @@
   &_container{
     background-color: $color-tertiary-contacts;
     width: 45%;
+
+    @include respond(phone){
+      width:75%;
+      border-radius: 8.5px;
+    }
   }
 
 }

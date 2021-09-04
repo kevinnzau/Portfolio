@@ -7,12 +7,23 @@
   &_cards{
   display:flex;
 
+  @include respond(phone){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+  }
+
   }
   &_card{
     margin: 1rem 1rem;
     border: 2px solid $color-secondary-pricing;
     padding: 3.3rem 1rem;
     width: 25%;
+    border-radius: 5px;
+
+    @include respond(phone){
+      width: 95%;
+    }
   }
   &_text{
     font-family:  "Laila", sans-serif;
